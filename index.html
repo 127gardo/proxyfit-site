@@ -3,42 +3,116 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ProxyFit | ProxyFit</title>
-  <meta name="description" content="ProxyFit for ProxyFit." />
-  <style>
-:root { color-scheme: light dark; --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --accent:#22c55e; --border:#334155; }
-@media (prefers-color-scheme: light){ :root{ --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569; --border:#e2e8f0; }}
-*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65} 
-.container{max-width:900px;margin:0 auto;padding:40px 20px 64px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
-h1{font-size:2.2rem;line-height:1.1;margin:0 0 8px} h2{margin-top:32px;border-top:1px solid var(--border);padding-top:24px} h3{margin-top:22px}.meta,.muted{color:var(--muted)}
-a{color:var(--accent)} ul{padding-left:24px}.notice{border-left:4px solid var(--accent);padding:12px 16px;background:rgba(34,197,94,.10);border-radius:12px;margin:20px 0}
-.footer{margin-top:28px;font-size:.95rem;color:var(--muted)} nav{margin:20px 0 28px;display:flex;gap:12px;flex-wrap:wrap} nav a{padding:8px 12px;border:1px solid var(--border);border-radius:999px;text-decoration:none}
-</style>
+  <title>ProxyFit | Track Your Workouts. Build Your Proxy.</title>
+  <meta name="description" content="ProxyFit is a workout tracker that turns real training progress into character stats, progression, unlocks, and battles. Built for beginners, experienced lifters, and gamers who want another reason to stay consistent." />
+  <link rel="canonical" href="https://proxyfit.app/" />
+  <meta property="og:title" content="ProxyFit | Track Your Workouts. Build Your Proxy." />
+  <meta property="og:description" content="A workout tracker that turns your real gym progress into character progression and battles." />
+  <meta property="og:url" content="https://proxyfit.app/" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ProxyFit",
+    "url": "https://proxyfit.app/",
+    "applicationCategory": "HealthApplication",
+    "description": "A workout tracker that turns real training progress into character stats, progression, unlocks, and battles."
+  }
+  </script>
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <h1>ProxyFit</h1>
-      <p class="meta">ProxyFit · Last updated: May 23, 2026</p>
-      <nav>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="data-deletion.html">Data Deletion</a>
-        <a href="links.html">Links &amp; Updates</a>
-      </nav>
-      
-<p>Official ProxyFit support and legal pages.</p>
-<ul>
-  <li><a href="support.html">Support</a></li>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-  <li><a href="data-deletion.html">Data Deletion</a></li>
-  <li><a href="links.html">Links &amp; Updates</a></li>
-</ul>
+<header class="site-header">
+  <div class="site-shell navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">PF</span>ProxyFit</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="beginners.html">Beginners</a>
+      <a href="blog/">Blog</a>
+      <a href="links.html">Links</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
 
-      <p class="footer">© 2026 ProxyFit. These pages are provided for app users and app store review.</p>
+<main>
+  <div class="site-shell">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Fitness app first. Game second.</div>
+        <h1>Track your workouts. Build your Proxy.</h1>
+        <p class="lead">ProxyFit is a workout tracker that makes real training progress feel more rewarding. Log your workouts, improve your stats, build your character, and take that progress into battle.</p>
+        <div class="actions">
+          <a class="button primary" href="#how-it-works">See how ProxyFit works</a>
+          <a class="button secondary" href="links.html">Follow ProxyFit</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="ProxyFit highlights">
+        <div class="stat-row"><div class="stat-icon">1</div><div><strong>Track real workouts</strong><p>Log exercises, sets, reps, weight, and your training history.</p></div></div>
+        <div class="stat-row"><div class="stat-icon">2</div><div><strong>Turn progress into stats</strong><p>Your training influences attributes such as Strength, Endurance, and Speed.</p></div></div>
+        <div class="stat-row"><div class="stat-icon">3</div><div><strong>Put progress to use</strong><p>Use the character you build through training in battles and progression.</p></div></div>
+      </aside>
     </section>
-  </main>
+
+    <section class="section" id="how-it-works">
+      <div class="section-head">
+        <div class="eyebrow">How it works</div>
+        <h2>Your workout is still the point.</h2>
+        <p>ProxyFit doesn't replace training with a game. It adds another layer of progress on top of the workouts you're already doing.</p>
+      </div>
+      <div class="flow">
+        <article class="card"><h3>Train</h3><p>Complete your normal gym workout or fitness routine.</p></article>
+        <article class="card"><h3>Track</h3><p>Record exercises and performance so you can see what you actually did.</p></article>
+        <article class="card"><h3>Progress</h3><p>Your real activity helps strengthen and develop your Proxy.</p></article>
+        <article class="card"><h3>Battle</h3><p>Use that progress in battles, rounds, unlocks, and character progression.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="eyebrow">Built around real fitness problems</div>
+        <h2>Useful even if you've never searched for a “gamified fitness app.”</h2>
+        <p>You don't need to care about the category name. ProxyFit is designed around familiar goals: keeping track of training, seeing improvement, making workouts less boring, and having another reason to stay consistent.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>New to the gym?</h3><p>Start with a clear place to record what you do and build a history you can improve on.</p><a class="stretched" href="beginners.html">Workout tracking for beginners →</a></article>
+        <article class="card"><h3>Struggle with consistency?</h3><p>Add a visible sense of progression to workouts so finishing a session gives you more than a check mark.</p><a class="stretched" href="motivation.html">Staying motivated →</a></article>
+        <article class="card"><h3>Already a gamer?</h3><p>If levels, stats, characters, and progression keep you engaged in games, ProxyFit brings some of that feedback into fitness.</p><a class="stretched" href="fitness-for-gamers.html">Fitness for gamers →</a></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <div class="eyebrow">The difference</div>
+        <h2>A workout tracker with a reason to care about the numbers.</h2>
+        <p>A lot of fitness apps stop after recording what you did. ProxyFit uses those workouts as input for a second progression system. The goal is simple: make logging and improving your real workouts feel more satisfying without getting in the way of the fitness tools.</p>
+        <div class="actions">
+          <a class="button primary" href="workout-tracker.html">Explore workout tracking</a>
+          <a class="button secondary" href="gamified-fitness.html">What is gamified fitness?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="eyebrow">From the ProxyFit blog</div>
+        <h2>Simple fitness guidance for getting started and staying consistent.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card blog-card"><time datetime="2026-08-20">August 20, 2026</time><h3>How to Track Your Workouts as a Beginner</h3><p>You don't need a complicated spreadsheet. Start with the few numbers that make progress visible.</p><a class="stretched" href="blog/how-to-track-workouts-beginner.html">Read article →</a></article>
+        <article class="card blog-card"><time datetime="2026-08-20">August 20, 2026</time><h3>How to Stay Consistent at the Gym</h3><p>Use smaller goals, visible progress, and routines that make showing up easier to repeat.</p><a class="stretched" href="blog/how-to-stay-consistent-at-gym.html">Read article →</a></article>
+        <article class="card blog-card"><time datetime="2026-08-20">August 20, 2026</time><h3>Fitness for Gamers: Making Progress Feel Familiar</h3><p>Why levels, feedback loops, and measurable progress can make fitness easier to engage with.</p><a class="stretched" href="blog/fitness-for-gamers.html">Read article →</a></article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-shell footer-row">
+    <span>© 2026 ProxyFit.</span>
+    <div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="data-deletion.html">Data Deletion</a><a href="links.html">Links &amp; Updates</a></div>
+  </div>
+</footer>
 </body>
 </html>
