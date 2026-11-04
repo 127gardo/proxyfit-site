@@ -1857,3 +1857,10 @@ summary:focus-visible {
 .guide-table thead th:first-child {
   width: 28%;
 }
+
+/* Keep the expanded guide navigation comfortable on smaller desktops. */
+@media (min-width: 981px) and (max-width: 1200px) {
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: .8rem; }
+  .nav-actions { gap: 14px; }
+}

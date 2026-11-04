@@ -1,0 +1,75 @@
+.exercise-page .product-intro { padding-bottom: 28px; }
+.exercise-page .product-intro h1 { font-size: clamp(3rem, 6vw, 5rem); max-width: 900px; }
+.exercise-page.lang-ja .product-intro h1 { font-size: clamp(2rem, 4.5vw, 3.5rem); }
+.exercise-breadcrumb { display: inline-block; margin-bottom: 8px; font-size: .88rem; font-weight: 650; }
+.exercise-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
+.exercise-tags span { background: var(--accent-soft); color: var(--accent-deep); padding: 5px 12px; border-radius: 30px; font-size: .8rem; font-weight: 650; }
+.exercise-layout { max-width: 760px; padding-bottom: 44px; }
+.exercise-media { max-width: 440px; margin-bottom: 32px; }
+.exercise-watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--accent-deep);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.exercise-watch:hover { background: var(--charcoal); color: #fff; }
+.exercise-page .exercise-player { width: min(420px, calc(100% - 24px)); }
+.exercise-player figure { margin: 0; }
+.exercise-player video { display: block; width: 100%; max-height: min(68dvh, 560px); object-fit: contain; background: #080808; }
+.exercise-player figcaption { padding: 12px 16px; font-size: .82rem; color: var(--muted); }
+.exercise-player form { margin: 0; }
+.exercise-instructions h2, .exercise-reference h2, .exercise-related h2 { margin: 0 0 18px; font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -.02em; line-height: 1.3; }
+.exercise-targets { border-left: 3px solid var(--accent); background: var(--paper-2); padding: 16px 20px; border-radius: 0 12px 12px 0; margin-bottom: 30px; }
+.exercise-targets h2 { margin-bottom: 8px; font-size: 1.1rem; }
+.exercise-targets p { margin: 4px 0; }
+.exercise-targets .supporting { color: #555e67; font-size: .9rem; }
+.exercise-steps { list-style: none; counter-reset: exercise-step; padding: 0; margin: 0 0 28px; }
+.exercise-steps li { counter-increment: exercise-step; position: relative; padding-left: 46px; margin-bottom: 20px; }
+.exercise-steps li::before { content: counter(exercise-step, decimal-leading-zero); position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 750; font-variant-numeric: tabular-nums; }
+.exercise-cue { padding: 16px 20px; background: var(--accent-soft); color: var(--accent-deep); border-radius: 14px; font-weight: 650; }
+.exercise-note { color: var(--muted); font-size: .86rem; }
+.exercise-mistakes { padding-top: 20px; margin-top: 26px; border-top: 1px solid var(--line); }
+.exercise-mistakes ul { padding-left: 20px; }
+.exercise-mistakes li + li { margin-top: 10px; }
+.exercise-related { padding: 34px 0 44px; border-top: 1px solid var(--line); }
+.exercise-reference { margin-bottom: 12px; }
+.exercise-reference h2 { margin-bottom: 10px; font-size: 1.2rem; }
+.exercise-stills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.exercise-stills figure { margin: 0; border-radius: 15px; overflow: hidden; border: 1px solid var(--line); background: var(--paper); }
+.exercise-still-button { aspect-ratio: 1; border-radius: 0; overflow: hidden; }
+.exercise-still-button:focus-visible { outline-offset: -4px; }
+.exercise-still-button .exercise-still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% var(--exercise-crop-y, 50%); }
+.exercise-still-button::after { content: "↗" / ""; position: absolute; right: 7px; bottom: 7px; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #080808cc; color: #fff; font-size: 14px; }
+.exercise-stills figcaption { padding: 9px 10px; font-weight: 650; font-size: .85rem; line-height: 1.35; }
+.exercise-page .media-dialog { max-width: calc(100% - 24px); }
+.exercise-page .media-dialog-crop { width: min(640px, 100%); }
+.exercise-page .media-dialog-image { width: 100%; max-height: calc(100dvh - 100px); object-fit: contain; }
+.exercise-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 668px; margin: 8px 0 44px; }
+.exercise-card { color: inherit; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; text-decoration: none; transition: transform .15s ease; }
+.exercise-card:hover { transform: translateY(-3px); color: inherit; }
+.exercise-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.exercise-card-thumb { position: relative; display: block; aspect-ratio: 1; overflow: hidden; }
+.exercise-card-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% var(--exercise-crop-y, 50%); }
+.exercise-card-body { padding: 10px 12px 12px; }
+.exercise-card h2, .exercise-card h3 { margin: 0; font-size: 1.1rem; line-height: 1.25; overflow-wrap: anywhere; }
+.exercise-card-meta { font-size: .7rem; color: var(--accent-deep); text-transform: uppercase; letter-spacing: .05em; font-weight: 750; margin-bottom: 4px; }
+.exercise-reference-link { font-size: .8rem; color: var(--muted); margin: 9px 0 0; }
+.exercise-related .exercise-card-grid { margin-bottom: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 440px; }
+.exercise-mobile-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.exercise-mobile-nav a { font-size: .85rem; }
+@media (min-width: 981px) and (max-width: 1200px) { .exercise-page .nav-links { gap: 12px; } .exercise-page .nav-links a { font-size: .8rem; } }
+@media (max-width: 760px) {
+  .exercise-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 440px; }
+  .exercise-card-body { padding-inline: 10px; }
+  .exercise-card h2, .exercise-card h3 { font-size: 1rem; }
+  .exercise-page.lang-ja .product-intro h1 { font-size: clamp(1.5rem, 7vw, 2rem); }
+}
+
+.exercise-name-part { white-space: nowrap; }
